@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="twitterApp">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+  <script src="script.js"></script>
+  <title>Twitter Pool</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">Twitter Pool</a>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><i class="fa fa-comment"></i> Tweet</a></li>
+          <li><a href="#authorized"><i class="fa fa-shield"></i> Authorize</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div id="main">
+      <div ng-view></div>
+
+    </div>
+</body>
+</html>
